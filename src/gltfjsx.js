@@ -57,7 +57,7 @@ export default function (file, output, options) {
         if (options.transform || options.instance || options.instanceall) {
           const { name } = path.parse(file)
           const outputDir = path.parse(path.resolve(output ?? file)).dir;
-          const transformOut = path.join(outputDir, name + '-transformed.glb')
+          const transformOut = options.transformoutput ? path.resolve(options.transformoutput) : path.join(outputDir, name + '-transformed.glb');
           await transform(file, transformOut, options)
           const { size: sizeOriginal, sizeKB: sizeKBOriginal } = getFileSize(file)
           const { size: sizeTransformed, sizeKB: sizeKBTransformed } = getFileSize(transformOut)
