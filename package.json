@@ -1,6 +1,6 @@
 {
   "name": "zira-gltfjsx",
-  "version": "6.9.0",
+  "version": "6.9.1",
   "description": "GLTF to JSX converter",
   "scripts": {
     "build": "rollup -c",
@@ -23,12 +23,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pmndrs/gltfjsx.git"
+    "url": "git+https://github.com/Zira-Games/gltfjsx.git"
   },
   "bugs": {
     "url": "https://github.com/pmndrs/gltfjsx/issues"
   },
-  "homepage": "https://github.com/pmndrs/gltfjsx#readme",
+  "homepage": "https://github.com/Zira-Games/gltfjsx#readme",
   "bin": {
     "zira-gltfjsx": "./cli.js"
   },
